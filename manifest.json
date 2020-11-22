@@ -1,0 +1,24 @@
+{
+  "author": "perioad@me.com",
+  "name": "Lookup popup dictionary",
+  "version": "1.0.0",
+  "description": "Minimalistic extension for looking up english words",
+  "manifest_version": 2,
+  "web_accessible_resources": [
+    "kitten.jpg"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+  // "background": {
+  //   "scripts": ["background.js"]
+  // },
+  // "browser_action": {
+  //   "default_icon": "dictionary.png",
+  //   "default_popup": "popup.html",
+  //   "default_title": "A popup will come here."
+  // }
+}
